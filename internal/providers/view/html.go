@@ -6,6 +6,6 @@ import (
 )
 
 func WithGlobalData(data gin.H) gin.H {
-	data["APP_NAME"] = viper.Get("APP_NAME")
+	data["APP_NAME"] = viper.Get("App.Name")
 	return data
 }
